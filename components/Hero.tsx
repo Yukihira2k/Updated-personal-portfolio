@@ -1,10 +1,16 @@
+'use client'
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import MagicButton from './ui/MagicButton'
+import MagicButton from './MagicButton'
 import { FaLocationArrow } from "react-icons/fa";
+import {useState} from "react"
 
 const Hero = () => {
+
+
+  
+
   return (
     <div className="pb-20 pt-36">
         <div>
@@ -21,7 +27,7 @@ const Hero = () => {
 
         <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.5]  flex items-center justify-center absolute left-0 top-0">
 
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="absolute pointer-events-none inset-0 flex items-center justify-center transition ease-in-out delay-150 dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         
         </div>
 
@@ -40,6 +46,9 @@ const Hero = () => {
               title="Show my work"
               icon={<FaLocationArrow />}
               position="right"
+              otherClasses={`!bg-[#161A31] transition ease-in-out delay-3000 hover:bg-gradient-to-r from-slate-900 to-gray-700 text-white font-semibold py-2 px-4 rounded`}
+            
+             
             />
           </a>
             </div>

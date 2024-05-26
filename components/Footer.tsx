@@ -24,6 +24,7 @@ const Footer = () => {
             title="Let's get in touch"
             icon={<FaLocationArrow />}
             position="right"
+            otherClasses="!bg-[#161A31] bg-gradient-to-r from-slate-900 to-gray-700 text-white font-semibold py-2 px-4 rounded"
           />
         </a>
       </div>
